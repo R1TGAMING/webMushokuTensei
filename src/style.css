@@ -7,13 +7,21 @@ body {
 }
 
 .outline-solid {
-    outline-style: solid;
+  outline-style: solid;
+}
 
+.text-shadow-orange {
+  text-shadow: 0px 0px 10px #ffc13c;
 }
 
 .mask {
-    .mask-gradient {
-        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-        mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-      }
+  .mask-gradient {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    );
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
 }
+

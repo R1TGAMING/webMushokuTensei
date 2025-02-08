@@ -8,19 +8,55 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="main.js"></script>
   </head>
-  <body class="  items-center text-center bg-[#f8f8f8]">
-    <!-- Hero Sectio -->
-    <section class="flex relative md:justify-between overflow-hidden ">
-      <div class="md:static l bottom-0 text-[#f8f8f8]  md:text-[#ffda8b]  absolute z-10 md:p-10 my-auto p-5 text-left">
-        <h1 class="text-2xl md:text-4xl text-nowrap font-extrabold md:text-[#ffc13c]">Mushoku Tensei : <br> Jobless Reincarnation</h1>
-        <button class="outline-solid mt-2 outline-[#7d4f24]  hover:bg-[#8B5A2B] md:hover:bg-[#b66e2b] p-5  rounded-lg font-bold ">Watch Trailer</button>
-        
-      </div>
-        
-      </div>
-      <img src="images/bg1.jpg" class="object-cover brightness-50  mask h-[95vh] md:w-[100vh] md:h-[100vh] w-[200vh] opacity-" alt="" />
+  <body class="items-center text-center bg-[#f8f8f8]">
+    <!-- Hero Section -->
+    <section class="flex relative md:justify-between overflow-hidden" id="hero">
+      <div
+        class="md:static l bottom-0 text-[#f8f8f8] md:text-[#ffda8b] absolute z-10 md:p-10 my-auto p-5 text-left"
+      >
+        <h1
+          class="text-2xl md:text-4xl text-nowrap font-extrabold md:text-[#ffc13c]"
+        >
+          Mushoku Tensei : <br />
+          Jobless Reincarnation
+        </h1>
 
-      
+        <p class="text-[12px] md:text-[#e8b341]">
+          a story about a man who was reincarnated into a fantasy world after
+          dying. He was reincarnated as Rudeus Greyrat carrying the memories of
+          his previous life.
+        </p>
+        <button
+          class="outline-solid mt-2 outline-[#7d4f24] hover:bg-[#8B5A2B] md:hover:bg-[#7d4f24] p-5 rounded-lg font-bold"
+        >
+          Watch Trailer
+        </button>
+        <p class="py-1 text-[12px] opacity-80 md:hidden">Available At :</p>
+        <ul class="flex text-[12px] gap-2 opacity-80 md:hidden">
+          <li>Crunchyroll</li>
+          <li>BiliBili</li>
+          <li>Netflix</li>
+        </ul>
+      </div>
+
+      <img
+        src="images/bg1.jpg"
+        class="object-cover brightness-50 mask h-[90vh] md:w-[100vh] md:h-[100vh] w-[200vh] opacity-"
+        alt=""
+      />
+    </section>
+
+    <section id="main-characters" class="relative flex py-20 px-5 justify-center mx-auto">
+      <h1 class="text-2xl absolute font-extrabold md:text-5xl text-[#ffc13c]">
+        Main Character
+      </h1>
+
+      <ul class="grid md:grid-cols-4 grid-cols-2 py-20 md:py-40 gap-4 justify-center mx-auto items-center ">
+        <li><img src="images/Rudeus_S2_Icon.png " alt="" class="animate hover:animate-pulse" />Rudeus Greyrat</li>
+        <li><img src="images/Sylphiette_S2_Icon.png" alt="" />Sylphiette</li>
+        <li><img src="images/Roxy_icon.png" alt="" />Roxy Migurdia</li>
+        <li><img src="images/Eris_icon.png" alt="" />Eris Boreas Greyrat</li>
+      </ul>
     </section>
   </body>
 </html>
