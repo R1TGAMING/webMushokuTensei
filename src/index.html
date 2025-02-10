@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body class="items-center text-center bg-[#f8f8f8]">
     <!-- Hero Section -->
@@ -46,17 +50,103 @@
       />
     </section>
 
-    <section id="main-characters" class="relative flex py-20 px-5 justify-center mx-auto">
+    <section
+      id="main-characters"
+      class="relative flex py-20 px-5 justify-center mx-auto"
+    >
       <h1 class="text-2xl absolute font-extrabold md:text-5xl text-[#ffc13c]">
-        Main Character
+        Main Characters
       </h1>
 
-      <ul class="grid md:grid-cols-4 grid-cols-2 py-20 md:py-40 gap-4 justify-center mx-auto items-center ">
-        <li><img src="images/Rudeus_S2_Icon.png " alt="" class="animate hover:animate-pulse" />Rudeus Greyrat</li>
-        <li><img src="images/Sylphiette_S2_Icon.png" alt="" />Sylphiette</li>
-        <li><img src="images/Roxy_icon.png" alt="" />Roxy Migurdia</li>
-        <li><img src="images/Eris_icon.png" alt="" />Eris Boreas Greyrat</li>
+      <ul
+        class="grid md:grid-cols-4 grid-cols-2 pt-20 md:pt-40 gap-4 mx-auto items-center"
+      >
+        <li class="grid place-items-center">
+          <img
+            src="images/Rudeus_S2_Icon.png "
+            alt=""
+            class="scale-transform"
+          />
+          Rudeus Greyrat
+        </li>
+        <li class="grid place-items-center">
+          <img
+            src="images/Sylphiette_S2_Icon.png"
+            alt=""
+            class="scale-transform"
+          />Sylphiette
+        </li>
+        <li class="grid place-items-center">
+          <img src="images/Roxy_icon.png" alt="" class="scale-transform" />Roxy
+          Migurdia
+        </li>
+        <li class="grid place-items-center">
+          <img src="images/Eris_icon.png" alt="" class="scale-transform" />Eris
+          Boreas Greyrat
+        </li>
       </ul>
     </section>
+
+    <p class="text-center p-5">═════════ ✦ ═════════</p>
+
+    <section class="flex flex-col md:pt-8 text-center justify-center">
+      <h1 class="text-2xl font-extrabold md:text-5xl text-[#ffc13c]">Quotes</h1>
+      <p class="text-black font-normal text-[14px] md:text-[20px] p-2 md:p-8">
+        <span class="italic"
+          >"Sure, I Lost Something Kind Of Important, But That Doesn't Mean I've
+          Lost Everything."</span
+        >
+        - Rudeus Greyrat. Season 2, Episode 1
+      </p>
+      <p class="text-black font-normal text-[14px] md:text-[20px] p-2 md:p-8">
+        <span class="italic"
+          >"I’m Here For You. I Won’t Go Away. I’ll See You For Who You
+          Are."</span
+        >
+        - Rudeus Greyrat. Season 2, Episode 17
+      </p>
+      <p class="text-black font-normal text-[14px] md:text-[20px] p-2 md:p-8">
+        <span class="italic">"A Man’s Word Is His Bond."</span>
+        - Rudeus Greyrat. Season 2, Episode 9
+      </p>
+    </section>
+
+    <p class="text-center">═════════ ✦ ═════════</p>
+
+    <section class="pt-5 md:pt-2">
+      <h1
+        class="text-2xl font-extrabold md:text-5xl pb-5 md:p-10 text-[#ffc13c]"
+      >
+        Gallery
+      </h1>
+      <swiper-container 
+        class="mySwiper sm:w-[75vh]"
+        pagination="true"
+        pagination-clickable="true"
+        space-between="0"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide
+          ><img src="images/Mushoten_01_08.webp" alt="1"
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="images/Mushoten_01_14.webp" alt="2"
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="images/Mushoten_01_15.webp" alt="3"
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="images/MT-AN-S1-E03-GIF-01.webp" alt="4"
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="images/MT-AN-S2-E24-PNG-52.webp" alt="5"
+        /></swiper-slide>
+      </swiper-container>
+    </section>
+
+    <footer class="text-[10px] pt-5">By ipii a.k.a Rafi</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
